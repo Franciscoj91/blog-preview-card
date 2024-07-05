@@ -23,10 +23,29 @@ body {
   background-color: var(--color-yellow);
   font-family: 'Figtree';
   font-weight: 500;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  width: 327px;
+  height: 501px;
+  border-radius: 20px;
+  border-inline: 1px solid var(--color-black);
+  border-block: 1px solid var(--color-black);
+  box-shadow: 8px 8px #000;
+}
+
+.card:hover {
+  box-shadow: 16px 16px #000;
+  cursor: url(/assets/images/handcursor.svg), pointer;
   
 }
 
@@ -41,4 +60,20 @@ body {
 .attribution a {
   color: var(--color-grey);
   font-weight: 800;
+}
+
+
+@media (min-width: 750px) {
+  .card {
+    width: 356px;
+    height: 512px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .card {
+    width: 384px;
+    height: 522px;
+  }
 }

@@ -1,8 +1,44 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url(../fonts/Figtree-VariableFont_wght.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url(../fonts/Figtree-VariableFont_wght.ttf);
+  font-weight: 800;
+  font-style: bold;
+}
+
+:root {
+  --color-yellow : #F4D04E;
+  --color-black: #111111;
+  --color-white: #FFFFFF;
+  --color-grey: #7F7F7F;
+}
+
+body {
+  background-color: var(--color-yellow);
+  font-family: 'Figtree';
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .attribution {
+  color: var(--color-black);
+  position: absolute;
+  bottom: 1px;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-grey);
+  font-weight: 800;
 }

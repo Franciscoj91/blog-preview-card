@@ -17,6 +17,11 @@
   --color-black: #111111;
   --color-white: #FFFFFF;
   --color-grey: #7F7F7F;
+  --font-size-xs: 0.75rem;
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.25rem;
+  --font-size-heading: 1.5rem;
 }
 
 body {
@@ -41,7 +46,7 @@ body {
   border-radius: 20px;
   border-inline: 1px solid var(--color-black);
   border-block: 1px solid var(--color-black);
-  box-shadow: 8px 8px #000;
+  box-shadow: 8px 8px var(--color-black);
 }
 
 .card-img {
@@ -59,9 +64,50 @@ body {
 }
 
 .card:hover {
-  box-shadow: 16px 16px #000;
+  box-shadow: 16px 16px var(--color-black);
   cursor: url(/assets/images/handcursor.svg), pointer;
   
+}
+
+.card-info {
+  margin-top: 24px;
+  font-size: var(--font-size-xs);
+}
+
+.tag {
+  box-sizing: border-box;
+  background-color: var(--color-yellow);
+  font-weight: 800;
+  width: 73px;
+  height: 26px;
+  border-radius: 4px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date {
+  margin: 0.8rem 0;
+}
+
+.heading {
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.heading:focus {
+  color: var(--color-yellow);
+}
+
+.text {
+  color: var(--color-grey);
+  font-size: var(--font-size-s);
+  line-height: 150%;
+  margin: 0.8rem 0 0;
+  text-align: left;
 }
 
 .attribution {
@@ -91,6 +137,23 @@ body {
   .card {
     width: 384px;
     height: 522px;
+  }
+
+  .card-info {
+    font-size: var(--font-size-s);
+  }
+
+  .tag {
+    width: 82px;
+    height: 29px;
+  }
+
+  .heading {
+    font-size: var(--font-size-heading);
+  }
+
+  .text {
+    font-size: var(--font-size-m);
   }
 
   

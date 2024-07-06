@@ -88,7 +88,7 @@ body {
 }
 
 .date {
-  margin: 0.8rem 0;
+  margin: 0.75rem 0;
 }
 
 .heading {
@@ -106,8 +106,32 @@ body {
   color: var(--color-grey);
   font-size: var(--font-size-s);
   line-height: 150%;
-  margin: 0.8rem 0 0;
+  margin: 0.75rem 0 0;
   text-align: left;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  font-size: var(--font-size-s);
+  font-weight: 800;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  margin: 0;
 }
 
 .attribution {
